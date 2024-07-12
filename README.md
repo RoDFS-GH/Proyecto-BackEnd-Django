@@ -1,8 +1,6 @@
 # Proyecto-BackEnd-Django
 BackEnd Portfolio Web
 
-BackEnd Portfolio Web
-
 Trabajo Integrador Final Fullstack Python (Backend)
 
 Criterios de evaluación:
