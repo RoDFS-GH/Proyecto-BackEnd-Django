@@ -1,0 +1,43 @@
+{% extends "core/base.html" %}
+{% block title %}Portafolio{% endblock title %}
+{% load static %}
+{% block content %}
+{% comment %}{{projects}}{% endcomment %}
+
+
+
+<!-- ===== PORTFOLIO SECTION START ===== -->
+<section class="portfolio section" id="portfolio">
+    <div class="container" id="target">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="portfolio-heading padd-15">
+                <h3> Echa un vistazo a todo lo que hemos logrado hasta ahora. Nuestros resultados hablan por
+                    sí solos. </h3>
+            </div>
+        </div>
+        {% for project in projects %}
+        <div class="row">
+            <!-- ===== Container ===== -->
+            <div class="portfolio__container container grid">
+                 <div class="portfolio__item">
+                    <img src="{{project.image.url}}" alt="imagen" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">{{project.subtitle}}</p>
+                        <h3 class="portfolio__title">{{project.title}}</h3>
+                        {% if project.link %}
+                        <a href="{{project.link}}" target="_blank">Visit my Website</a>
+                        {% endif %}
+                    </div>
+                 </div>
+            </div>
+        </div>
+        {% endfor %}    
+    </div>
+</section>
+<!-- ===== PORTFOLIO SECTION END ===== -->
+{% endblock %}

@@ -1,0 +1,214 @@
+{% extends "core/base.html" %}
+{% block title %}Acerca de mi{% endblock title %}
+{% load static %}
+{% block content %}
+<!-- ===== ABOUT SECTION START ===== -->
+<section class="about section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-content padd-15">
+                <div class="row">
+                    <div class="about-text padd-15">
+                        <h3>Soy Luciana Méndez y soy <span>Full Stack Developer.</span></h3>
+                        <p>Considero que soy una persona muy dedicada a la hora de llevar a cabo sus
+                            actividades laborales.
+                            Actualmente me especializo en el desarrollo de front-end y back-end, he
+                            trabajado en gran variedad de proyectos. Desde sitios web corporativos hasta
+                            aplicaciones de gran alcance.
+                            Soy una profesional adaptable y flexible, capaz de prosperar tanto en entornos
+                            de trabajo pequeños y dinámicos como en organizaciones más grandes y
+                            estructuradas.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="personal-info padd-15">
+                        <div class="row">
+                            <div class="info-item padd-15">
+                                <p>Fecha de nacimiento: <span><time datetime="1990-06-02">2 de Junio de 1990</time></span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Edad: <span>34</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Página Web: <span>www.portfolioweb.com</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Email: <span>info@gmail.com</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Grado: <span>Software Engineer</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Teléfono : <span>1161658382</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Ciudad: <span>Ciudad Autónoma de Buenos Aires</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Freelance: <span>Disponible</span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="buttons padd-15">
+                                <a href="{% url 'contact'%}" data-section-index="1" class="btn hire-me">Contratar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills padd-15">
+                        <div class="row">
+                            <div class="skill-item padd-15">
+                                <h5>HTML, CSS y JAVASCRIPT</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 100%;"></div>
+                                    <div class="skill-percent">100<span>%</span></div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>Bootstrap, Angular Js, React</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 90%;"></div>
+                                    <div class="skill-percent">90<span>%</span></div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>Ruby</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 76%;"></div>
+                                    <div class="skill-percent">76<span>%</span></div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>PYTHON</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 66%;"></div>
+                                    <div class="skill-percent">66<span>%</span></div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>C++</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 50%;"></div>
+                                    <div class="skill-percent">50<span>%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="educacion padd-15">
+                        <h3 class="title">Educación</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- TIMELINE ITEM -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2024-2024
+                                        </h3>
+                                        <h4 class="timeline-title">Curso en línea Full Stack - Python</h4>
+                                        <p class="timeline-text">Actualmente me encuentro renovando mis
+                                            conocimientos con nuevas herramientas que me permitan optimizar
+                                            mi rendimiento laboral.</p>
+                                    </div>
+                                    <!-- TIMELINE ITEM -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2015-2016
+                                        </h3>
+                                        <h4 class="timeline-title">Diplomatura en Desarrollo Web Full Stack
+                                        </h4>
+                                        <p class="timeline-text">Completé un intensivo diplomado en
+                                            desarrollo web full stack, donde adquirí experiencia práctica en
+                                            el diseño y desarrollo de aplicaciones web modernas. Aprendí
+                                            sobre tecnologías front-end y back-end, frameworks populares y
+                                            prácticas recomendadas en el desarrollo web.</p>
+                                    </div>
+                                    <!-- TIMELINE ITEM -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2008-2014
+                                        </h3>
+                                        <h4 class="timeline-title">Licenciatura en Ingeniería Informática
+                                        </h4>
+                                        <p class="timeline-text"> Durante mi carrera universitaria, adquirí
+                                            una sólida base en conceptos de programación, algoritmos y
+                                            estructuras de datos. Participé en proyectos prácticos que me
+                                            permitieron desarrollar mis habilidades de resolución de
+                                            problemas y trabajar en equipo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiencia padd-15">
+                        <h3 class="title">Experiencia</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- TIMELINE ITEM -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2024-2024
+                                        </h3>
+                                        <h4 class="timeline-title">Senior Full Stack Developer<br>Mercado Libre</h4>
+                                        <p class="timeline-text"> Lidero equipos de desarrollo en la
+                                            creación de aplicaciones web complejas, desde el diseño hasta la
+                                            implementación. <br>
+                                            Diseño la arquitectura de sistemas web, seleccionando
+                                            herramientas apropiadas para cumplir con los requisitos del
+                                            proyecto.<br>
+                                            Proporcioné orientación técnica y mentoría a desarrolladores más
+                                            jóvenes, promoviendo las mejores prácticas de desarrollo y la
+                                            calidad del código.</p>
+                                    </div>
+                                    <!-- TIMELINE ITEM -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2017-2023
+                                        </h3>
+                                        <h4 class="timeline-title">Junior Full Stack Developer<br>Globant</h4>
+                                        <p class="timeline-text">Desarrollé y mantuve aplicaciones web.<br>
+                                            Trabajé en equipo para diseñar y desarrollar nuevas
+                                            funcionalidades, resolver problemas técnicos y mejorar la
+                                            experiencia del usuario. <br>
+                                            Participé en reuniones de planificación y revisión de código,
+                                            recibiendo retroalimentación y orientación de desarrolladores
+                                            más experimentados.</p>
+                                    </div>
+                                    <!-- TIMELINE ITEM -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2015-2017
+                                        </h3>
+                                        <h4 class="timeline-title">Trainee Full Stack Developer<br>GlobalLogic Latinoamérica</h4>
+                                        <p class="timeline-text">Aprendí los fundamentos del desarrollo web,
+                                            incluyendo HTML, CSS, JavaScript, frameworks front-end y
+                                            back-end, y bases de datos. <br>
+                                            Trabajé en proyectos prácticos bajo la supervisión de
+                                            desarrolladores senior, ganando experiencia en el ciclo completo
+                                            de desarrollo de software.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===== ABOUT SECTION END ===== -->
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "core/base.html" %}
+{% block title %}Portfolio Web{% endblock title %}
+{% load static %}
+{% block content %}
+<!-- ===== HOME SECTION START ===== -->
+ <section class="home active section" id="home">
+    <div class="container">
+        <div class="row"> 
+            <div class="home-info padd-15">
+                <h2 class="hello">Hola, mi nombre es <span class="name">Luciana</span></h2>
+                <h2 class="my-profession">Soy <span class="typing"></span></h2>
+                <p> Soy una diseñadora web Full Stack por más de 10 años.
+                    Mi area de especialización es la creación y mantenimiento de aplicaciones, páginas web y
+                    Diseño UX. </p>
+                <a href="{% static 'core/archives/CVitae.pdf' %}" class="btn">Descargar CV</a>
+            </div>
+            <div class="home-img padd-15">
+                <img src="{% static 'core/images/perfil.jpg' %}" alt="imagenCV">
+            </div>
+        </div>
+    </div>
+ </section>
+<!-- ===== HOME SECTION END ===== -->
+{% endblock %}

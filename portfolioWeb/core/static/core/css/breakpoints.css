@@ -1,0 +1,334 @@
+/* ****** BREAKPOINTS ****** */
+
+/* ****** DESKTOP ****** */
+@media (min-width:1024px) {
+    .section .container {
+        padding-top: 70px;
+    }
+
+    .header-nav {
+        left: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-nav .nav li a {
+        width: 80%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .header-nav .nav li a i {
+        padding: 0 0 0 10px;
+        text-align: center;
+    }
+
+    .header-nav.open {
+        left: 0;
+    }
+
+    .section {
+        left: 0;
+    }
+
+    .section.open {
+        left: 0;
+    }
+
+    .home-img::after {
+        right: 0px;
+        bottom: -25px;
+    }
+
+    .home-img::before {
+        left: 0px;
+        top: -25px;
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+
+    .portfolio__container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-group .comunicacion {
+        height: 50px;
+    }
+
+    /* L O G I N */
+    .modal {
+        left: 50px;
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+/* ****** TABLET ****** */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .home .home-info .home .home-img .contact .contact-info-item,
+    .service .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .header-nav .ham {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+
+    .home-img::before {
+        left: 0;
+        top: 0;
+    }
+
+    .home-img::after {
+        right: 40px;
+        bottom: 40px;
+    }
+
+    .home .home-img img {
+        width: 320px;
+        height: 320px;
+
+    }
+
+    .header-nav .ham {
+        right: 60px;
+    }
+
+    /*     ****** LOGO ****** */
+    .header-nav .logo a {
+        font-size: 35px;
+    }
+
+    .header-nav .logo a span {
+        font-size: 35px;
+    }
+
+    /* ****** FIN DEL LOGO ****** */
+    .header-nav .nav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 0 0 0;
+        padding: 0;
+        margin-left: 0;
+        display: none;
+        background-color: var(--bg-black-100);
+        opacity: 0;
+    }
+
+    .header-nav .nav li {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 7px;
+        margin: 10px 0;
+        font-size: 24px;
+        background-color: var(--bg-black-100);
+    }
+
+    .header-nav .nav.active {
+        display: flex;
+        animation: showMenu 350ms ease-in-out both;
+        background-color: var(--bg-black-100);
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes showMenu {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .br-1.animated {
+        transform: rotate(-45deg) translate(-6px, 4px);
+    }
+
+    .br-2.animated {
+        opacity: 0;
+    }
+
+    .br-3.animated {
+        transform: rotate(45deg) translate(-9px, -6px);
+    }
+
+    .form-group .comunicacion {
+        height: 90px;
+    }
+
+    .portfolio__container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* L O G I N */
+    #abrirModal {
+        top: 28px;
+    }
+}
+
+/* ****** MOBILES ****** */
+@media (max-width:767px) {
+
+    .footer .nav,
+    .contact .contact-form,
+    .contact .contact-info-item,
+    .form-group,
+    .portfolio__container,
+    .service .service-item,
+    .about .about-content .experiencia,
+    .about .about-content .educacion,
+    .about .about-content .skills,
+    .about .about-content .personal-info,
+    .home .home-img,
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .portfolio .portfolio__item {
+        flex: 0 0 70%;
+        max-width: 70%;
+        justify-self: center;
+        height: 30rem;
+    }
+
+    #home {
+        text-align: center;
+
+    }
+
+    .home .home-img {
+        margin-inline: auto;
+        padding-top: 50px;
+    }
+
+    .home .home-img img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .header-nav .ham {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 60px;
+    }
+
+    /*  ****** LOGO ****** */
+    .header-nav .logo a {
+        font-size: 30px;
+    }
+
+    .header-nav .logo a span {
+        font-size: 30px;
+    }
+
+    .header-nav .nav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 0 0 0;
+        padding: 0;
+        margin-left: 0;
+        display: none;
+        background-color: var(--bg-black-10);
+        opacity: 0;
+    }
+
+    .header-nav .nav li {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 7px;
+        margin: 10px 0;
+        font-size: 12px;
+        background-color: var(--bg-black-100);
+    }
+
+    .header-nav .nav.active {
+        display: flex;
+        animation: showMenu 350ms ease-in-out both;
+        background-color: var(--bg-black-100);
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes showMenu {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .br-1.animated {
+        transform: rotate(-45deg) translate(-6px, 4px);
+    }
+
+    .br-2.animated {
+        opacity: 0;
+    }
+
+    .br-3.animated {
+        transform: rotate(45deg) translate(-9px, -6px);
+    }
+
+    .header-nav .logo a {
+        font-weight: 700;
+        font-size: 25px;
+        left: 10px;
+    }
+
+    .header-nav .logo a span {
+        font-size: 25px;
+        font-weight: 700;
+        left: 8px;
+    }
+
+    .portfolio__container {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .form-group .comunicacion {
+        height: 120px;
+    }
+
+    .form-group .comunicacion .check {
+        display: inline;
+    }
+
+    .form-group .comunicacion input[type="checkbox"] {
+        display: inline;
+    }
+
+    .footer .nav-container .nav li a {
+        padding: 3px;
+    }
+
+    .footer .nav-container .nav li a i {
+        margin-right: 0;
+    }
+
+    /* L O G I N */
+    #abrirModal {
+        top: 28px;
+    }
+}
